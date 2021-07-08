@@ -3,54 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>실습용 웹사이트</title>
-<style>
-  body {
-    margin: 0px;
-  }
-  ol{border-right: 1px solid gray;
-    width: 40px;
-    margin: 0px;
-    padding: 50px;
-    padding-left: 87px;
-  }
-  h1{
-    font-size: 60px; text-align: center;
-    border-bottom: 1px solid gray;
-    padding: 20px;
-    margin: 0px;
-  }
-  img{
-    display: block; margin: 0px auto;
-  }
-  a{
-    color:black;
-    text-decoration: none
-  }
-  .saw {
-    color:green;
-  }
-  .active{
-    color:red;
-  }
-  #grid{
-    display: grid;
-    grid-template-columns: 200px 1fr
-  }
-  @media (max-width:600px) {
-    #grid{
-      display: block;
+    <link rel="stylesheet" href="style.css">
+    <script>
+    
+    function nda(self){
+    var target=document.querySelector('body')
+  if(self.value==='night') {
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    self.value='day';
+
+    var alist=document.querySelectorAll('a');
+    var i=0;
+    while(i<alist.length){
+      alist[i].style.color='powderblue';
+      i=i+1;
     }
-    ol{border-right: none
-    }
-    h1{
-      font-size: 50px; text-align: center;
-      border-bottom: 1px solid gray;
-      padding: 20px;
-      margin: 0px;}
+
   }
-</style>
+  else {
+    target.style.backgroundColor='white';
+    target.style.color='black';
+    self.value='night';
+
+    var alist=document.querySelectorAll('a');
+    var i=0;
+    while(i<alist.length){
+      alist[i].style.color='blue';
+      i=i+1;
+    }
+  }
+}
+
+    </script>
   </head>
+
   <body>
+    <input type="button" value="night" onclick="nda(this)">
     <a href="index1.html"><h1>애국가</h1></a>
 <p style="margin:0px">
 <div id="grid">
