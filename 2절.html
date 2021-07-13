@@ -3,25 +3,56 @@
   <head>
     <meta charset="utf-8">
     <title>실습용 웹사이트</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="스크립트.js"> </script>
 <style>
 
 </style>
   </head>
   <body>
-    <h1>애국가</h1>
-<p>
-<ul>
+    <input type="button" value="night" onclick="nda(this)">
+    <a href="index1.html"><h1>애국가</h1></a>
+  <p style="margin:0px">
+  <div id="grid">
+  <ol>
   <li><a href="1절.html">1절</a></li>
   <li><a href="2절.html">2절</a></li>
   <li><a href="3절.html">3절</a></li>
   <li><a href="4절.html">4절</a></li>
-</ul>
-</p>
-<p>
-  남산 위에 저 소나무, 철갑을 두른 듯<br>
-바람 서리 불변함은 우리 기상일세.<br>
-무궁화 삼천리 화려 강산<br>
-대한 사람, 대한으로 길이 보전하세.
-</p>
+  <p>
+  </ol>
+  <div id="article">
+  <h2 style="text-align:center;">2절</h2>
+  <p>
+  <div style="text-align: center;">
+    남산 위에 저 소나무, 철갑을 두른 듯<br>
+  바람 서리 불변함은 우리 기상일세.<br>
+  무궁화 삼천리 화려 강산<br>
+  대한 사람, 대한으로 길이 보전하세.<br>
+  </p>
+  </div>
+  <p>
+  <img src="애국가.gif" height="500" width="500" style="text-align:center">
   </body>
-</html>
+  </div>
+  </div>
+  <div id="disqus_thread"></div>
+  <script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://192-168-0-13.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </html>

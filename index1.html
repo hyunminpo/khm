@@ -4,38 +4,8 @@
     <meta charset="utf-8">
     <title>실습용 웹사이트</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-    
-    function nda(self){
-    var target=document.querySelector('body')
-  if(self.value==='night') {
-    target.style.backgroundColor='black';
-    target.style.color='white';
-    self.value='day';
-
-    var alist=document.querySelectorAll('a');
-    var i=0;
-    while(i<alist.length){
-      alist[i].style.color='powderblue';
-      i=i+1;
-    }
-
-  }
-  else {
-    target.style.backgroundColor='white';
-    target.style.color='black';
-    self.value='night';
-
-    var alist=document.querySelectorAll('a');
-    var i=0;
-    while(i<alist.length){
-      alist[i].style.color='blue';
-      i=i+1;
-    }
-  }
-}
-
-    </script>
+    <script src="스크립트.js"> </script>
+    <div style="text-align: right; color:blue;">Made by mac</div>
   </head>
 
   <body>
@@ -44,8 +14,8 @@
 <p style="margin:0px">
 <div id="grid">
 <ol>
-  <li><a href="1절.html" class="saw">1절</a></li>
-  <li><a href="2절.html" class="saw active">2절</a></li>
+  <li><a href="1절.html">1절</a></li>
+  <li><a href="2절.html">2절</a></li>
   <li><a href="3절.html">3절</a></li>
   <li><a href="4절.html">4절</a></li>
 <p>
